@@ -123,7 +123,7 @@ class Bomb:
 
 class Beam:
     def __init__(self,bird:Bird):
-        self.img = pg.image.load(f"{MAIN_DIR}/fig/beam.png"), 
+        self.img = pg.image.load(f"{MAIN_DIR}/fig/beam.png")
         self.rct = self.img.get_rect()
         self.rct.centery = bird.rct.centery #こうかとんの中心座標を取得
         self.rct.centerx = bird.rct.centerx+bird.rct.width/2
