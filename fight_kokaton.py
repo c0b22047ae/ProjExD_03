@@ -118,6 +118,9 @@ class Bomb:
         screen.blit(self.img, self.rct)
 
 class Beam:
+    """
+    ビームに関するクラス
+    """
     def __init__(self,bird:Bird):
         self.img = pg.image.load(f"{MAIN_DIR}/fig/beam.png")
         self.rct = self.img.get_rect()
@@ -134,6 +137,9 @@ class Beam:
         screen.blit(self.img, self.rct)
 
 class Score:
+    """
+    スコアに関するクラス
+    """
     def __init__(self):
         self.font = pg.font.SysFont("hgp創英角ポップ体",30)
         self.num = 0
